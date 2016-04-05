@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片base64编码</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="base64-wrapper" id="base64-wrapper">
+        <div class="col file-select">
+            <div class="fake-file">
+                <span class="btn fake-file-text">选择图片</span>
+                <input class="file-input" type="file" name="fileinput" data-role="file-input">
+            </div>
+        </div>
+    
+        <div class="col file-base64">
+            <textarea class="base64-result" name="base64" data-role="base64-result" disabled></textarea>
+            <p>图片原始大小：</p>
+            <p>base64大小：</p>
+        </div>
+    </div>
+</body>
+</html>

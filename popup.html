@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FE Helper</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        body {
+            width: 150px;
+        }
+
+        .fe-helper {
+
+        }
+
+        .fe-helper li {
+            padding: 5px;
+            border-bottom: 1px dotted #ccc;
+            cursor: pointer;
+            -webkit-transition: background-color .2s;
+            transition: background-color .2s;
+        }
+        .fe-helper li:hover {
+            background-color: #eee;
+        }
+        .fe-helper li:last-child {
+            border: none;
+        }
+        .refer {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="fe-helper">
+        <li data-tab="1" data-type="encode">字符串编解码</li>
+        <li data-tab="1" data-type="base64">图片base64</li>
+        <li data-tab="1" data-type="json">JSON格式化</li>
+        <li>RSS订阅</li>
+        <li>QR Code</li>
+        <li>屏幕截图</li>
+    </ul>
+
+    <div class="refer">
+        <ul>
+            <li>https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/</li>
+            <li>http://www.cnblogs.com/ambar/archive/2011/06/19/write-the-first-chrome-extension.html</li>
+        </ul>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
