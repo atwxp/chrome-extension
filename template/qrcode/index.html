@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QR CODE</title>
+</head>
+
+<body>
+    <div id="wrap">hello qrcode</div>
+
+    <script src="../../js/util.js"></script>
+    <script src="qrcode.js"></script>
+    <script>
+
+    var qr = QRCode.create({
+        // text: 'HELLO WORLD'
+        text: '19930818'
+    });
+
+    console.log(qr);
+
+    </script>
+</body>
+</html>
